@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px 0;
+  background-color: rgb(34, 33, 33);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #ff69b419;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50% / 50% 10%;
+  border: 3px solid #ff69b4;
+  margin-bottom: 20px;
+}
+
+i{
+  color: #ff69b45d;
+}
+
+
+h1{
+  color: #605e5f;
+  font-size: 20px;
+}
+
+.experience h3,
+.habilidades h3,
+.educacao h3{
+  color: #605e5f;
+}
+
+
+.experience,
+.habilidades,
+.educacao {
+  color: #605e5f;
+}
+
+
+
+
+h4 {
+  color: #ff69b479;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+
+
+
+.contact-info,
+.resumo {
+  margin-top: 60px;
+  align-items: center;
+  color: #605e5f;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin: 8px 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info a {
+  color: #605e5f;
+  text-decoration: none;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #ff69b419;
+  color: rgba(255, 255, 255, 0.673);
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 50px;
+}
+
+.download-btn:hover {
+  background-color: #ff4b8f
+}
+
+
+.content {
+  width: 70%;
+  padding: 40px 20px;
+}
+
+h3 {
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 5px;
+  color: #ff69b4;
+}
+
+.job h4 {
+  margin-bottom: 5px;
+  color: #ff69b479;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.habilidades ul li {
+  display: inline-block;
+  background: #ff69b4;
+  color: #1e1e1e;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.educacao p {
+  margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      width: 90%;
+  }
+  .sidebar {
+      width: 100%;
+      padding: 20px 0;
+  }
+  .content {
+      width: 100%;
+      padding: 20px;
+  }
+  .habilidades ul li {
+      display: block;
+      text-align: center;
+      margin: 5px auto;
+      width: 80%;
+  }
+}
